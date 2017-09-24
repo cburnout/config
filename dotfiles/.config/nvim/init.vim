@@ -1,3 +1,18 @@
+set number
+set relativenumber
+
+" Default tab config, use spaces
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set textwidth=100 " Too narrow for my tastes, but satisfies most standards.
+set smarttab
+set shiftround	" use multiple of shiftwidth when indenting with '<' and '>'
+set expandtab
+
+set noswapfile
+set nobackup " do not keep a backup file, use persistent versions instead
+
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'

@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ -e $1 ]
+then
+    echo "it already exists"
+else
+    echo "\documentclass{article}" >> $1
+    echo "\usepackage{amsmath}" >> $1
+    echo "\begin{document}" >> $1
+    echo "" >> $1
+    echo "\end{document}" >> $1
+    echo "basics created"
+fi
