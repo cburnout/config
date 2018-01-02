@@ -87,4 +87,5 @@ export PATH="$PATH:${HOME}/Repos/depot_tools"
 
 alias vim="nvim"
 
+alias nautilus="nautilus --no-desktop"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

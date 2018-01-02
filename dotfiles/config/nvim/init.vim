@@ -1,11 +1,10 @@
 set number
-set relativenumber
 
 " Default tab config, use spaces
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set textwidth=100 " Too narrow for my tastes, but satisfies most standards.
+set textwidth=80 " Too narrow for my tastes, but satisfies most standards.
 set smarttab
 set shiftround	" use multiple of shiftwidth when indenting with '<' and '>'
 set expandtab
@@ -35,7 +34,16 @@ Plug 'junegunn/rainbow_parentheses.vim'
 
 " Tabcomplete 
 " nvim-completion-manager
-Plug 'roxma/nvim-completion-manager', { 'do': function('DoRemote') }
+" Plug 'roxma/nvim-completion-manager', { 'do': function('DoRemote') }
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Status bar
 Plug 'vim-airline/vim-airline'
