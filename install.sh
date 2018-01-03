@@ -5,9 +5,7 @@
 #exit
 
 sudo apt -y install aptitude
-sudo aptitude -y update
-sudo aptitude -y upgrade
-sudo aptitude -y install git neovim i3 i3status suckless-tools build-essential zsh curl python-stdeb 
+./aptitude-install.sh
 
 chsh -s /bin/zsh
 
@@ -30,3 +28,5 @@ cd /tmp
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 rm google-chrome-stable_current_amd64.deb
+
+./neovim-install.sh
