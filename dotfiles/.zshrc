@@ -89,3 +89,4 @@ alias vim="nvim"
 
 alias nautilus="nautilus --no-desktop"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /opt/ros/lunar/setup.zsh

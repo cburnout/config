@@ -8,6 +8,7 @@ set textwidth=80 " Too narrow for my tastes, but satisfies most standards.
 set smarttab
 set shiftround	" use multiple of shiftwidth when indenting with '<' and '>'
 set expandtab
+colorscheme desert
 
 set noswapfile
 set nobackup " do not keep a backup file, use persistent versions instead
